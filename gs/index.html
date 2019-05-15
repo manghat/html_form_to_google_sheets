@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script type="application/ld+json">
+    {
+      "@context":       "http://schema.org",
+      "@type":          "EmailMessage",
+      "description":    "Go to Doc",
+      "potentialAction": {
+        "@type": "ViewAction",
+        "target":   "https://docs.google.com/spreadsheets/d/1ga4Qo_PIe1EfkWn3LJ4_EAdtzwPB_KEhzX6UoSA7jGU/edit"
+      }
+    }
+    </script>
+    <base target="_top">
+  </head>
+  <body>
+  <h2> Payment failed </h2>
+  <p> Form submit time is <?= new Date() ?>. Please call immediately</p>
+    <table>
+      <? for (i in data) { ?>
+        <tr style = 'border-bottom: 1px solid #ddd; padding : 15px'>
+           <td style = 'font-weight: bold; padding : 15px'><?= i ?></td>
+           <td style = 'padding : 15px'><?= data[i] ?></td>
+        </tr>
+      <? } ?>
+    </table>
+  </body>
+</html>
