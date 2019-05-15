@@ -14,9 +14,9 @@ Email is also triggered to the listed email-ids with all the information in the 
 3. Make a google sheet
 4. On google sheet go to Tools -> <>Script Editor
 5. Copy all the files in the `gs` folder
-    6. Go to `get_request_to_sheets.gs` and run setup => allow permissions
-    7. Go to `email.gs` and run email() => allow permissions
-    8. Change `ToEmail` in `email.gs` to the list of people you want the email to go to. 
+    1. Go to `get_request_to_sheets.gs` and run setup => allow permissions
+    2. Go to `email.gs` and run email() => allow permissions
+    3. Change `ToEmail` in `email.gs` to the list of people you want the email to go to. 
 9. Publish -> web app 
     1. Who has access to the app -> anyone, even anonymous
     2. get the url and paste it into `script.js` 
